@@ -1,7 +1,5 @@
 package generator
 
-import kotlin.random.Random
-
 interface LottoNumberGenerator {
     fun generateNumbers(): IntArray;
 }
