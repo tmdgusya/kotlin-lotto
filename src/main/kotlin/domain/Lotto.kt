@@ -3,6 +3,6 @@ package domain
 import generator.RandomLottoNumberGenerator
 
 class Lotto(private val randomLottoNumberGenerator: RandomLottoNumberGenerator) {
-    private val numbers: IntArray = randomLottoNumberGenerator.generateNumbers()
-    private val fee: Int = 5000
+    val numbers: IntArray = randomLottoNumberGenerator.generateNumbers()
+    val fee: Int = 5000
 }
