@@ -1,6 +1,7 @@
 package generator
 
 import org.junit.jupiter.api.Test
+import kotlin.test.assertEquals
 import kotlin.test.assertTrue
 
 
@@ -19,6 +20,18 @@ internal class LottoNumberGeneratorKtTest {
         //then
         assertTrue(randomLottoNum >= 1);
         assertTrue(randomLottoNum <= 45);
+    }
+
+    @Test
+    fun verifyLottoNumbersSixSize() {
+        //given
+        val defaultLottoNumberSize = 6;
+
+        //when
+        val lottoNumbers: IntArray = lottoNumberGenerator.generateNumbers();
+
+        //then
+        assertEquals(lottoNumbers.size, defaultLottoNumberSize);
     }
 
 }
