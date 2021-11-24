@@ -4,7 +4,7 @@ import generator.RandomLottoNumberGenerator
 
 class LottoMachine(private val randomLottoNumberGenerator: RandomLottoNumberGenerator) {
 
-    public fun createLotto(): Lotto {
+    fun createLotto(): Lotto {
         return Lotto(randomLottoNumberGenerator);
     }
 
