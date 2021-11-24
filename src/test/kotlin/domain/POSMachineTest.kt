@@ -24,4 +24,21 @@ internal class POSMachineTest {
         assertEquals(expectedErrorMessage, exception.message);
     }
 
+    @Test
+    fun giveAccurateCountOfLottoIfEnoughMoney() {
+        //given
+        val money = 10000;
+        val count = 2;
+        var lottoList : List<Lotto>? = null;
+
+        //when
+        assertDoesNotThrow() {
+            lottoList = posMachine.calculate(money, count)
+        }
+
+        //then
+        assertNotNull(lottoList);
+        assertEquals(count, lottoList?.size);
+    }
+
 }
