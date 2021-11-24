@@ -4,4 +4,5 @@ Kotlin 으로 Lotto 를 구현합니다.
 
 ## 대략적인 도식
 
-![image](https://user-images.githubusercontent.com/57784077/142915232-120fe3cf-afa9-43f7-9489-e5b0a81bb9af.png)
+![image](https://user-images.githubusercontent.com/57784077/143152377-7c4fdd45-130a-4ed3-880c-07ccf539a2a9.png)
+
